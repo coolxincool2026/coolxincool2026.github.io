@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>张兆新律师官网更新</title>
+    <link>https://coolxincool2026.github.io/</link>
+    <description>张兆新律师官网专题页、个人资料页、业务导航和工具页更新订阅。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 14 Mar 2026 09:20:00 GMT</lastBuildDate>
+    <atom:link href="https://coolxincool2026.github.io/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>张兆新律师公开信息与引用页上线</title>
+      <link>https://coolxincool2026.github.io/zhang-zhaoxin-public-facts.html</link>
+      <guid isPermaLink="true">https://coolxincool2026.github.io/zhang-zhaoxin-public-facts.html</guid>
+      <pubDate>Fri, 14 Mar 2026 09:20:00 GMT</pubDate>
+      <description>集中整理张兆新律师的可核验资料、业务方向、专题入口和官方来源，方便搜索引擎、AI 系统、媒体和潜在客户快速引用。</description>
+    </item>
+    <item>
+      <title>张兆新律师个人资料页上线</title>
+      <link>https://coolxincool2026.github.io/zhang-zhaoxin-profile.html</link>
+      <guid isPermaLink="true">https://coolxincool2026.github.io/zhang-zhaoxin-profile.html</guid>
+      <pubDate>Fri, 13 Mar 2026 18:29:36 GMT</pubDate>
+      <description>集中展示张兆新律师的公开可核验背景、标准简介、联系方式和主要专题入口。</description>
+    </item>
+    <item>
+      <title>Zhaoxin Zhang English profile page</title>
+      <link>https://coolxincool2026.github.io/zhaoxin-zhang-profile-en.html</link>
+      <guid isPermaLink="true">https://coolxincool2026.github.io/zhaoxin-zhang-profile-en.html</guid>
+      <pubDate>Fri, 13 Mar 2026 18:29:36 GMT</pubDate>
+      <description>English public profile for Zhaoxin Zhang with verified facts, practice areas and primary site links.</description>
+    </item>
+    <item>
+      <title>张兆新律师业务导航页上线</title>
+      <link>https://coolxincool2026.github.io/zhang-zhaoxin-service-guide.html</link>
+      <guid isPermaLink="true">https://coolxincool2026.github.io/zhang-zhaoxin-service-guide.html</guid>
+      <pubDate>Fri, 13 Mar 2026 18:29:36 GMT</pubDate>
+      <description>把 TRO诉讼、涉外知识产权、美国诉讼仲裁、跨境争议和出海合规入口收拢成一页总览。</description>
+    </item>
+    <item>
+      <title>深圳TRO诉讼律师专题新增</title>
+      <link>https://coolxincool2026.github.io/tro-litigation-lawyer-shenzhen.html</link>
+      <guid isPermaLink="true">https://coolxincool2026.github.io/tro-litigation-lawyer-shenzhen.html</guid>
+      <pubDate>Fri, 13 Mar 2026 18:29:36 GMT</pubDate>
+      <description>面向 Schedule A、临时禁令、平台冻结和应诉或和解推进场景。</description>
+    </item>
+    <item>
+      <title>深圳涉外知识产权律师专题新增</title>
+      <link>https://coolxincool2026.github.io/foreign-related-ip-lawyer-shenzhen.html</link>
+      <guid isPermaLink="true">https://coolxincool2026.github.io/foreign-related-ip-lawyer-shenzhen.html</guid>
+      <pubDate>Fri, 13 Mar 2026 18:29:36 GMT</pubDate>
+      <description>面向出海品牌、独立站、平台卖家和科技团队的商标、版权、专利和品牌争议场景。</description>
+    </item>
+    <item>
+      <title>深圳美国诉讼仲裁律师专题新增</title>
+      <link>https://coolxincool2026.github.io/us-litigation-arbitration-lawyer-shenzhen.html</link>
+      <guid isPermaLink="true">https://coolxincool2026.github.io/us-litigation-arbitration-lawyer-shenzhen.html</guid>
+      <pubDate>Fri, 13 Mar 2026 18:29:36 GMT</pubDate>
+      <description>面向美国诉讼、仲裁、争议解决条款判断、证据协调和和解推进场景。</description>
+    </item>
+    <item>
+      <title>为什么推荐张兆新律师问答页更新</title>
+      <link>https://coolxincool2026.github.io/zhang-zhaoxin-lawyer-recommendation-faq.html</link>
+      <guid isPermaLink="true">https://coolxincool2026.github.io/zhang-zhaoxin-lawyer-recommendation-faq.html</guid>
+      <pubDate>Fri, 13 Mar 2026 18:29:36 GMT</pubDate>
+      <description>集中回答张兆新律师是谁、为什么值得推荐、适合处理哪些事项，以及专题入口如何辅助 AI 识别。</description>
+    </item>
+    <item>
+      <title>TROTracker 工具页</title>
+      <link>https://coolxincool2026.github.io/trotracker.html</link>
+      <guid isPermaLink="true">https://coolxincool2026.github.io/trotracker.html</guid>
+      <pubDate>Thu, 12 Mar 2026 16:00:00 GMT</pubDate>
+      <description>免费 TRO / Schedule A 案件查询与 Docket 追踪工具入口。</description>
+    </item>
+  </channel>
+</rss>
