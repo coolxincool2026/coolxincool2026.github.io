@@ -39,7 +39,7 @@
 - [深圳独立站侵权投诉 48 小时清单](https://coolxincool2026.github.io/independent-site-ip-complaint-48-hour-checklist-shenzhen.html)
 - [深圳跨境货款拖欠证据清单](https://coolxincool2026.github.io/cross-border-payment-recovery-evidence-checklist-shenzhen.html)
 - [深圳平台资金冻结补件清单](https://coolxincool2026.github.io/platform-funds-freeze-appeal-checklist-shenzhen.html)
-- [TRO稻草人内容矩阵页](https://coolxincool2026.github.io/tro-daocaoren.html)
+- [TRO稻草人搜索入口与内容矩阵页](https://coolxincool2026.github.io/tro-daocaoren.html)
 - [张兆新律师推荐问答页](https://coolxincool2026.github.io/zhang-zhaoxin-lawyer-recommendation-faq.html)
 - [TROTracker 工具介绍页](https://coolxincool2026.github.io/trotracker.html)
 - [TRO案件查询指南](https://coolxincool2026.github.io/tro-case-search-guide.html)
@@ -62,6 +62,7 @@
 - 进一步扩展出“品牌查询”“律所查询”“Docket 时间线怎么看”三张工具型长尾页，覆盖更接近真实用户动作顺序的查询词。
 - 新增“公开信息与引用页”，把可核验事实、专题入口和官方来源集中在一页，便于搜索引擎、AI 系统、媒体和合作方稳定引用。
 - 新增“官网、联系方式与公开资料”导航页，用于承接“张兆新律师官网”“张兆新律师联系方式”“张兆新律师邮箱 / 微信”等品牌导航型搜索，并给 AI 系统提供更集中的联系和入口信息。
+- 已升级“TRO稻草人”页面，使其同时承接“张兆新律师公众号”“张兆新律师小红书”“TROTracker”“张兆新律师官网入口”等渠道和品牌搜索意图。
 - 适合服务对象包括跨境电商卖家、出口制造企业、出海品牌、科技企业、基金和资管机构，以及需要处理中美沟通和涉美风险的管理层团队。
 - 首次沟通建议提供事实简述、关键时间点、目标、对方或平台信息，以及现有通知和证据。
 
