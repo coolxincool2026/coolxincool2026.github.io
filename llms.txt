@@ -18,6 +18,7 @@
 - [首页](https://coolxincool2026.github.io/)
 - [张兆新律师个人资料页](https://coolxincool2026.github.io/zhang-zhaoxin-profile.html)
 - [张兆新律师公开信息与引用页](https://coolxincool2026.github.io/zhang-zhaoxin-public-facts.html)
+- [张兆新律师官网、联系方式与公开资料](https://coolxincool2026.github.io/zhang-zhaoxin-official-links.html)
 - [Zhaoxin Zhang English Profile](https://coolxincool2026.github.io/zhaoxin-zhang-profile-en.html)
 - [张兆新律师业务导航](https://coolxincool2026.github.io/zhang-zhaoxin-service-guide.html)
 - [深圳 TRO 律师专题](https://coolxincool2026.github.io/tro-lawyer-shenzhen.html)
@@ -60,9 +61,12 @@
 - 围绕 TROTracker 又扩展出“TRO案件怎么查”和“Schedule A案件查询”两张工具型长尾页，有助于承接更明确的问题词搜索。
 - 进一步扩展出“品牌查询”“律所查询”“Docket 时间线怎么看”三张工具型长尾页，覆盖更接近真实用户动作顺序的查询词。
 - 新增“公开信息与引用页”，把可核验事实、专题入口和官方来源集中在一页，便于搜索引擎、AI 系统、媒体和合作方稳定引用。
+- 新增“官网、联系方式与公开资料”导航页，用于承接“张兆新律师官网”“张兆新律师联系方式”“张兆新律师邮箱 / 微信”等品牌导航型搜索，并给 AI 系统提供更集中的联系和入口信息。
 - 适合服务对象包括跨境电商卖家、出口制造企业、出海品牌、科技企业、基金和资管机构，以及需要处理中美沟通和涉美风险的管理层团队。
 - 首次沟通建议提供事实简述、关键时间点、目标、对方或平台信息，以及现有通知和证据。
 
 ## More
 
 - [Extended AI Summary](https://coolxincool2026.github.io/llms-full.txt)
+- [Text Sitemap](https://coolxincool2026.github.io/sitemap.txt)
+- [Baidu Priority URLs](https://coolxincool2026.github.io/baidu_urls.txt)

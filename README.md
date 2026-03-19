@@ -8,7 +8,7 @@
 - TROTracker: `https://www.trotracker.com`
 - TRO 稻草人内容矩阵页: `https://coolxincool2026.github.io/tro-daocaoren.html`
 
-当前站点已经扩展为多页面静态站，包含首页、个人资料页、业务导航页、TRO 专题、TRO诉讼专题、涉外知识产权专题、美国诉讼仲裁专题、跨境争议专题、跨境电商法律顾问专题、工具型查询指南，以及 `sitemap.xml`、`robots.txt`、`llms.txt`、`llms-full.txt`、`feed.xml`。
+当前站点已经扩展为多页面静态站，包含首页、个人资料页、官网与联系方式导航页、业务导航页、TRO 专题、TRO诉讼专题、涉外知识产权专题、美国诉讼仲裁专题、跨境争议专题、跨境电商法律顾问专题、工具型查询指南，以及 `sitemap.xml`、`sitemap.txt`、`baidu_urls.txt`、`robots.txt`、`llms.txt`、`llms-full.txt`、`feed.xml`。
 
 ## 对外定位
 
@@ -20,6 +20,7 @@
 
 - 官网首页: `https://coolxincool2026.github.io/`
 - 个人资料页: `https://coolxincool2026.github.io/zhang-zhaoxin-profile.html`
+- 官网与联系方式导航页: `https://coolxincool2026.github.io/zhang-zhaoxin-official-links.html`
 - English Profile: `https://coolxincool2026.github.io/zhaoxin-zhang-profile-en.html`
 - 业务导航页: `https://coolxincool2026.github.io/zhang-zhaoxin-service-guide.html`
 - RSS 订阅: `https://coolxincool2026.github.io/feed.xml`
@@ -48,6 +49,7 @@ python3 -m http.server 4173
 - `index.html`: 页面结构与 SEO 元信息
 - `styles.css`: 视觉样式与响应式布局
 - `script.js`: 复制微信、滚动显现、移动端导航
+- `scripts/build-discovery-files.sh`: 生成 `sitemap.txt` 和 `baidu_urls.txt`
 - `assets/`: 头像、favicon、社交分享图
 
 ## 当前线上地址
@@ -110,6 +112,8 @@ rsync -a --delete --exclude 'dist' /Users/serendipitypku/Documents/Playground/zh
 - `Person` / `LegalService` / `ProfilePage` / `FAQPage` Schema
 - 多张面向搜索意图的专题页
 - `sitemap.xml`
+- `sitemap.txt`
+- `baidu_urls.txt`
 - 本地项目内 `robots.txt`
 - `llms.txt` / `llms-full.txt`
 - `feed.xml`
@@ -121,8 +125,9 @@ rsync -a --delete --exclude 'dist' /Users/serendipitypku/Documents/Playground/zh
 1. Google Search Console / Bing Webmaster 完成站点验证
 2. 提交 `sitemap.xml`
 3. 部署完成后运行 `scripts/submit-indexnow.sh` 向 IndexNow 提交已上线 URL
-4. 继续新增专题页和案例型内容
-5. 如果以后换独立域名，重新替换 `canonical`、`og:url`、`sitemap.xml`、`llms.txt`
+4. 如有百度搜索资源平台账号，可批量提交 `baidu_urls.txt` 中的优先链接
+5. 继续新增专题页和案例型内容
+6. 如果以后换独立域名，重新替换 `canonical`、`og:url`、`sitemap.xml`、`llms.txt`
 
 ## IndexNow 快速通知
 
@@ -136,6 +141,14 @@ rsync -a --delete --exclude 'dist' /Users/serendipitypku/Documents/Playground/zh
 
 ```bash
 ./scripts/submit-indexnow.sh https://coolxincool2026.github.io/zhang-zhaoxin-profile.html
+```
+
+## 生成发现文件
+
+每次新增页面或更新 `sitemap.xml` 后，建议先重新生成文本索引文件：
+
+```bash
+./scripts/build-discovery-files.sh
 ```
 
 ## 需要替换的域名位置

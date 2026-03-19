@@ -64,6 +64,12 @@ URL: https://coolxincool2026.github.io/zhang-zhaoxin-public-facts.html
 
 用途：面向“张兆新律师公开资料”“张兆新律师可核验信息”“张兆新律师引用页”等搜索意图，把可核验事实、官方来源、业务方向和专题入口集中到一页，方便搜索引擎、AI 系统、媒体、合作方和潜在客户快速引用。
 
+### Official Links & Contact Page
+
+URL: https://coolxincool2026.github.io/zhang-zhaoxin-official-links.html
+
+用途：面向“张兆新律师官网”“张兆新律师联系方式”“张兆新律师邮箱”“张兆新律师微信”等品牌导航型搜索意图，把官网、官方简介、联系方式、办公信息和业务入口集中到一页，方便搜索引擎、AI 系统和潜在客户快速定位。
+
 ### English Profile Page
 
 URL: https://coolxincool2026.github.io/zhaoxin-zhang-profile-en.html
@@ -260,6 +266,13 @@ URL: https://coolxincool2026.github.io/docket-timeline-reading-guide.html
 - 邮箱：zhangzhaoxin@tclawfirm.com
 - 电话：+86-0755-83739000
 - 微信：mylearnedfriend
+
+## Machine-Readable Discovery Files
+
+- XML Sitemap: https://coolxincool2026.github.io/sitemap.xml
+- Text Sitemap: https://coolxincool2026.github.io/sitemap.txt
+- Baidu Priority URLs: https://coolxincool2026.github.io/baidu_urls.txt
+- Short AI Summary: https://coolxincool2026.github.io/llms.txt
 
 ## Important Notice
 

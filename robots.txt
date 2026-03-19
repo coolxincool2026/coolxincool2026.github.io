@@ -1,4 +1,17 @@
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Baiduspider-render
+Allow: /
+
 User-agent: *
 Allow: /
 
 Sitemap: https://coolxincool2026.github.io/sitemap.xml
+Sitemap: https://coolxincool2026.github.io/sitemap.txt

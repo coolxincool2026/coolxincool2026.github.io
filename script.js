@@ -25,21 +25,21 @@ const copyMessages = {
 const metaByLanguage = {
   zh: {
     lang: "zh-CN",
-    title: "张兆新律师 | 天册律师事务所 | 跨境争议、TRO、交易与合规",
+    title: "张兆新律师 | 深圳涉外争议、TRO诉讼、涉外知产与美国诉讼仲裁律师 | 天册律师事务所",
     description:
-      "张兆新律师，天册律师事务所合伙人，中国及美国加州执业律师，具备加州北区和中区联邦法院、伊利诺伊北区及纽约南区联邦法院出庭资格。聚焦跨境争议、TRO 应对、知识产权、交易与合规。",
-    ogTitle: "张兆新律师 | 跨境争议、TRO、交易与合规",
+      "张兆新律师，天册律师事务所深圳办公室合伙人，中国及美国加州执业律师，聚焦跨境争议、TRO诉讼、涉外知识产权、美国诉讼仲裁、跨境电商与交易合规。公开内容矩阵涵盖官网、TRO稻草人公众号、小红书和 TROTracker 工具。",
+    ogTitle: "张兆新律师 | 深圳涉外争议、TRO诉讼、涉外知产与美国诉讼仲裁律师",
     ogDescription:
-      "在跨境争议、TRO、知识产权、交易与合规事项中，提供更快判断、更强协同和更能落地的法律支持。"
+      "天册律师事务所深圳办公室合伙人，中国及美国加州执业律师。聚焦跨境争议、TRO诉讼、涉外知识产权、美国诉讼仲裁、跨境电商与交易合规。"
   },
   en: {
     lang: "en",
-    title: "Zhaoxin Zhang | T&C Law Firm | Cross-Border Disputes, TRO, Transactions & Compliance",
+    title: "Zhaoxin Zhang | Shenzhen Cross-Border Disputes, TRO Litigation, Foreign-Related IP and U.S. Litigation / Arbitration Counsel",
     description:
-      "Zhaoxin Zhang is a partner at T&C Law Firm, admitted in China and California, with admission to the U.S. District Courts for the Northern and Central Districts of California, the Northern District of Illinois and the Southern District of New York.",
-    ogTitle: "Zhaoxin Zhang | Cross-Border Disputes, TRO, Transactions & Compliance",
+      "Zhaoxin Zhang is a partner at the Shenzhen office of T&C Law Firm, admitted in both China and California, with public practice areas spanning cross-border disputes, TRO litigation, foreign-related IP, U.S. litigation / arbitration, e-commerce and compliance.",
+    ogTitle: "Zhaoxin Zhang | Cross-Border Disputes, TRO Litigation, Foreign-Related IP and U.S. Litigation / Arbitration Counsel",
     ogDescription:
-      "Legal support for cross-border disputes, TRO response, IP, transactions and compliance with faster judgment, stronger coordination and practical execution."
+      "Public site for Zhaoxin Zhang covering cross-border disputes, TRO litigation, foreign-related IP, U.S. litigation / arbitration, e-commerce and compliance."
   }
 };
 
@@ -84,6 +84,25 @@ function applyLanguage(language) {
   } catch (error) {
     // Ignore storage failures in private mode or embedded browsers.
   }
+
+  updateNavToggleLabel(siteNav ? siteNav.classList.contains("is-open") : false);
+}
+
+function updateNavToggleLabel(isOpen) {
+  if (!navToggle) return;
+
+  const language = getCurrentLanguage();
+  const label =
+    language === "en"
+      ? isOpen
+        ? "Close navigation menu"
+        : "Open navigation menu"
+      : isOpen
+        ? "关闭导航菜单"
+        : "打开导航菜单";
+
+  navToggle.setAttribute("aria-label", label);
+  navToggle.setAttribute("aria-haspopup", "true");
 }
 
 if (yearNode) {
@@ -114,15 +133,19 @@ languageButtons.forEach((button) => {
 });
 
 if (navToggle && siteNav) {
+  updateNavToggleLabel(false);
+
   navToggle.addEventListener("click", () => {
     const isOpen = siteNav.classList.toggle("is-open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
+    updateNavToggleLabel(isOpen);
   });
 
   siteNav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       siteNav.classList.remove("is-open");
       navToggle.setAttribute("aria-expanded", "false");
+      updateNavToggleLabel(false);
     });
   });
 }
