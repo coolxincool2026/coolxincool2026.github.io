@@ -40,6 +40,12 @@ trap cleanup EXIT
 
 rsync -a --delete --exclude 'dist' "$SITE_DIR/" "$DIST_DIR/"
 
+if [[ -d "$TARGET" && ! -d "$TARGET/.git" ]]; then
+  echo "Local target exists but is not a git repository checkout: $TARGET" >&2
+  echo "Pass a cloned GitHub Pages repo path with a .git directory, or use the remote git URL instead." >&2
+  exit 1
+fi
+
 if [[ -d "$TARGET/.git" ]]; then
   REPO_DIR="$TARGET"
 else
@@ -50,11 +56,19 @@ fi
 
 git -C "$REPO_DIR" rev-parse --is-inside-work-tree >/dev/null
 
-rsync -a --delete "$DIST_DIR/" "$REPO_DIR/"
+rsync -a --delete --exclude '.git' "$DIST_DIR/" "$REPO_DIR/"
 
-if git -C "$REPO_DIR" diff --quiet && git -C "$REPO_DIR" diff --cached --quiet && [[ -z "$(git -C "$REPO_DIR" status --short)" ]]; then
+if [[ -z "$(git -C "$REPO_DIR" status --short)" ]]; then
   echo "No changes to publish."
   exit 0
+fi
+
+if [[ -z "$(git -C "$REPO_DIR" config user.name || true)" ]]; then
+  git -C "$REPO_DIR" config user.name "Codex"
+fi
+
+if [[ -z "$(git -C "$REPO_DIR" config user.email || true)" ]]; then
+  git -C "$REPO_DIR" config user.email "codex@local"
 fi
 
 git -C "$REPO_DIR" add -A

@@ -71,13 +71,15 @@ python3 -m http.server 4173
 ./scripts/publish-github-pages.sh /path/to/coolxincool2026.github.io
 ```
 
+注意：这里的 `/path/to/coolxincool2026.github.io` 必须是一个已经 `git clone` 下来的仓库目录，不能只是一个普通静态文件夹副本。
+
 如果你手里没有本地仓库副本，也可以直接传仓库地址：
 
 ```bash
 ./scripts/publish-github-pages.sh https://github.com/coolxincool2026/coolxincool2026.github.io.git
 ```
 
-脚本内部会先同步 `dist/`，再把内容推到目标仓库。
+脚本内部会先同步 `dist/`，再把内容推到目标仓库，并保留目标仓库的 `.git` 元数据。
 
 如果你只想手动同步静态产物，再自己处理提交，也可以先执行：
 
